@@ -12,9 +12,9 @@ PROJECT_PREFIX=$1
 shift
 EMAILS=$@
 
-#disabled these as I do not have the rights
-#gcloud components update
-#gcloud components install alpha
+# disabled these as I do not have the rights
+# gcloud components update
+# gcloud components install alpha
 
 for EMAIL in $EMAILS; do
    PROJECT_ID=$(echo "${PROJECT_PREFIX}-${EMAIL}" | sed 's/@/x/g' | sed 's/\./x/g' | cut -c 1-30)

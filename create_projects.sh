@@ -12,6 +12,7 @@ PROJECT_PREFIX=$1
 shift
 EMAILS=$@
 
+#disabled these as I do not have the rights
 #gcloud components update
 #gcloud components install alpha
 

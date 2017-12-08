@@ -10,10 +10,3 @@ remove the alpha: use gcloud projects directly
 I have not tested the delete script
 project-prefix should be unique to you, in lower case. Suggest adding creating date at the end e.g. itcarlow-20171208
 the script should be improved to ensure lower cases in project ids  
-
-	
-Basic git commands
-git status
-git add .
-git commit -m "commit message"
-git push -f origin master

@@ -27,7 +27,7 @@ for EMAIL in $EMAILS; do
    # editor
    rm -f iam.json.*
    gcloud alpha projects get-iam-policy $PROJECT_ID --format=json > iam.json.orig
-   cat iam.json.orig | sed s'/"bindings": \[/"bindings": \[ \{"members": \["user:'$EMAIL'"\],"role": "roles\/editor"\},/g' > iam.json.new
+   cat iam.json.orig | sed s'/"bindings": \[/"bindings": \[ \{"members": \["user:'$EMAIL'"\],"role": "roles\/owner"\},/g' > iam.json.new
    gcloud alpha projects set-iam-policy $PROJECT_ID iam.json.new
 
    # billing
